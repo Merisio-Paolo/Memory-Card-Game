@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Attraverso css mettiamo che le carte abbiano tutte la stessa altezza e larghezza anche grazie alla funzione border-box-->
+    <style>
+    h1
+    {
+        text-align: left;
+    }
+    card
+      {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box; 
+      }
+    body /* modifichiamo il body in modo tale che le carte siano centrate e abbiano tutte la stessa misura*/
+      {
+        height: 100vh;
+        display: flex;
+        background: rgb(5, 66, 5);
+      }
+
+    .memory-game 
+      {
+        width: 640px;
+        height: 640px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    .memory-card 
+      {
+        width: calc(25% - 10px);
+        height: calc(33.333% - 10px);
+        margin: 5px;
+        position: relative;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+      }
+
+    .front-face,
+    .back-face 
+    {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #1C7CCC;
+    }
+    </style>
+    
+  </head>
+    <section class="memory-game">
+        <div class="memory-card">
+          <img class="front-face" src="BlueEgg.png" alt="React">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="BubbleEgg.png" alt="React">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="CloudyEgg.png" alt="Angular">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="DrippyEgg.png" alt="Angular">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="FlowerEgg.png" alt="Ember">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="HeartGreenEgg.png" alt="Ember">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="OrangeEgg.png" alt="Vue">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="PinkEgg.png" alt="Vue">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="PinkYellowEgg.png" alt="Backbone">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="img/backbone.svg" alt="Backbone">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="RainbowEgg.png" alt="Aurelia">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      
+        <div class="memory-card">
+          <img class="front-face" src="SprinkleEgg.png" alt="Aurelia">
+          <img class="back-face" src="BackFaceCard.png" alt="Memory Card">
+        </div>
+      </section>
+
+<body>
+    <h1>BENVENUTO NEL MEMORY</h1>
+</body>
+</html>
